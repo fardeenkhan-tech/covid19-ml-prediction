@@ -1,5 +1,124 @@
-# covid19-ml-prediction
-End-to-end Machine Learning pipeline for COVID-19 case prediction with preprocessing, model selection, and Streamlit deployment.
-This project is an end-to-end Machine Learning application that predicts COVID-19 related outcomes based on country-level data.
+# 🌍 COVID-19 Global Analytics & Prediction Dashboard
 
-The model is trained using multiple regression algorithms, evaluated using performance metrics, and the best-performing model is selected automatically. The final model is deployed as an interactive web application using Streamlit.
+## 📌 Overview
+This project is a Streamlit-based interactive dashboard for analyzing global COVID-19 data and predicting total deaths using a trained Machine Learning model.
+
+The application provides:
+- Advanced dynamic filters
+- KPI monitoring
+- Interactive visualizations
+- ML-based prediction
+- Deployment-ready structure
+
+---
+
+## 🚀 Features
+
+### 🔎 Advanced Filters
+- Country multi-select filter
+- Date range filter (auto-detection)
+- Dynamic numeric range sliders
+- Real-time filtered dataset count
+
+### 📊 Dashboard Metrics
+- Total Cases
+- Total Deaths
+- Total Recovered
+
+### 📈 Interactive Visualizations
+- Top 10 Countries by Cases
+- Top 10 Countries by Deaths
+- Dynamic Plotly charts
+
+### 🤖 ML Prediction
+- Custom input-based prediction
+- Trained model (`best_model.pkl`)
+- Real-time prediction output
+
+---
+## 📁 Project Structure
+
+```text
+covid19-streamlit-app/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── data/
+│   └── covid19_global_statistics_2026.csv
+│
+├── model/
+│   └── best_model.pkl
+│
+└── notebooks/
+    └── COVID19.ipynb
+```
+## ⚙️ Installation (Local Setup)
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone <your-repository-link>
+cd covid19-streamlit-app
+```
+
+### 2️⃣ Create Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+venv\Scripts\activate      # For Windows
+# source venv/bin/activate # For Mac/Linux
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run the Application
+
+```bash
+streamlit run app.py
+```
+---
+
+## 🌐 Deployment (Streamlit Cloud)
+
+1. Push project to GitHub
+2. Go to https://streamlit.io/cloud
+3. Connect repository
+4. Select `app.py`
+5. Deploy
+
+---
+
+## 🧠 Machine Learning Model
+
+- Model file: `model/best_model.pkl`
+- Algorithm: (e.g., XGBoost / Random Forest)
+- Target variable: Total Deaths
+
+---
+
+## 📊 Technologies Used
+
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-Learn
+- XGBoost
+- Plotly
+
+---
+
+## 📌 Author
+Fardeen Khan  
+Data Scientist | ML Enthusiast
+
+---
+
+## 📜 License
+This project is for educational and demonstration purposes.
